@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 /*font-family: 'Bebas Neue', sans-serif;*/
+nav{
+    text-align: right;
+}
 *{
     margin: 0;
     padding: 0;
@@ -101,16 +104,17 @@ body{
     color: #cf2d3a;
     text-transform: uppercase;
 
-}.nav {
+}
+.nav {
     display: inline-flex;
-    width: 100%;
+    /* width: 100%; */
     margin: 1px 10px 1px 10px;
 }
 .navegador {
     padding: 2px;
     margin: 1px 1px 1px 1px;
     display: inline-block;
-    margin-left: 800px;
+    /* margin-left: 800px; */
     position: relative;
 }
 
@@ -236,8 +240,16 @@ h2{
     text-transform: uppercase;
     font-family: 'Bebas Neue', sans-serif;
     margin-bottom: 20px;
+
     
-}   
+    
+} 
+
+.borde-texto{
+
+    -webkit-text-stroke: 0.1px#cf2d3a; /* Grosor y color del borde (WebKit/Blink browsers) */
+
+}
 p{
     font-size: 16px;
     color: #afafaf;
@@ -264,10 +276,16 @@ p{
 .servicio-txt p{
     padding: 50px 150px;
 }
+
+.servicio-container{
+    margin-top:  50px;
+    text-align: center;
+}
 .services-group{
     display: flex;
     justify-content: space-between;
-    margin: 45px 0;
+    margin: 45px 90px 50px 90px;
+    
 }
 
 .services-1{ 
@@ -291,7 +309,7 @@ p{
 }
 
 .prices{
-    display: flex;
+    text-align: center;
 }
 .princes-1{
     width: 50px;
@@ -305,6 +323,7 @@ table{
     left: 50px;
     text-align:left ;
     border-collapse: collapse;
+    margin-left: 25%;
 }
 tr{
     display: flex;
